@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport"/>
+<title>Watch Now</title>
+<meta content="noindex, nofollow" name="robots"/>
+<meta content="Watch Now" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Watch Now" property="og:title"/>
+<meta content="Watch Now" property="og:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&amp;family=Poppins:wght@600;700;800&amp;family=Roboto:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<style>
+    body { font-family:'Roboto',sans-serif; margin:0; padding:0; -webkit-font-smoothing:antialiased; overflow-x:hidden; background:#ffffff; user-select:none; }
+    .top-banner { background:#c20017; padding:10px; text-align:center; }
+    .top-banner h3 { font-family:'Poppins',sans-serif; font-weight:600; font-size:22px; line-height:26px; color:#fff; margin:0; }
+    @media(max-width:480px){ .top-banner{padding:5px 10px} .top-banner h3{font-size:14px;line-height:20px} }
+    .vsl-section { background:#d9d9d9; padding:20px; }
+    @media(max-width:480px){ .vsl-section{padding:10px} }
+    .vsl-headline { font-family:'Poppins',sans-serif; font-weight:700; font-size:24px; line-height:32px; text-align:center; color:#000; padding:0 10px 10px; }
+    .vsl-headline span { color:#c20017; }
+    @media(max-width:480px){ .vsl-headline{font-size:15px;line-height:22px} }
+    .vsl-player { width:100%; padding:10px 0; }
+    .vsl-player vturb-smartplayer { display:block; margin:0 auto; width:100%; }
+    .watchers-text { text-align:center; font-size:18px; font-weight:500; color:#000; padding:0 10px; }
+    .watchers-text span { color:#c20017; }
+    @media(max-width:480px){ .watchers-text{font-size:15px;line-height:20px} }
+    .products-outer { background:#d9d9d9; padding:20px 10px 40px; }
+    @media(max-width:480px){ .products-outer{background:#000;padding:10px 8px 20px} }
+    .product-box { background:#fff; border:1px solid #ccc; border-radius:20px; box-shadow:14px 12px 20px -12px rgba(0,0,0,.23); padding:35px 0; max-width:1140px; margin:0 auto; }
+    @media(max-width:480px){ .product-box{padding:20px 10px} }
+    .congrats-title { font-family:'Poppins',sans-serif; font-weight:800; font-size:36px; line-height:42px; text-align:center; color:#038a49; padding:0 20px; animation:zoomPulse 2s ease-in-out infinite; }
+    .congrats-title .black { color:#000; }
+    @keyframes zoomPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.03)} }
+    @media(max-width:480px){ .congrats-title{font-size:22px;line-height:29px;padding:0 5px} }
+    .orders-text { font-family:'Poppins',sans-serif; font-weight:600; font-size:24px; text-align:center; color:#000; padding:10px 20px; }
+    .orders-text span { color:#c20017; }
+    @media(max-width:480px){ .orders-text{font-size:18px;line-height:30px;padding:0 5px} }
+    .claim-title { font-family:'Poppins',sans-serif; font-weight:600; font-size:36px; text-align:center; color:#000; padding:50px 20px 20px; }
+    .claim-title span { color:#c20017; }
+    @media(max-width:480px){ .claim-title{font-size:22px;line-height:28px;padding:20px 5px 10px} }
+    .faq-wrap { padding:40px 20px 0; }
+    @media(max-width:480px){ .faq-wrap{padding:20px 5px 0} }
+    .faq-wrap .acc-item { background:#f7f8fa; border-radius:10px; overflow:hidden; margin-bottom:12px; }
+    .faq-wrap .acc-title { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; cursor:pointer; font-family:'Poppins',sans-serif; font-weight:600; font-size:22px; user-select:none; }
+    @media(max-width:480px){ .faq-wrap .acc-title{font-size:16px} }
+    .faq-wrap .acc-icon { font-size:20px; color:#038a49; font-weight:700; transition:transform .3s; }
+    .faq-wrap .acc-title.active .acc-icon { transform:rotate(45deg); }
+    .faq-wrap .acc-body { max-height:0; overflow:hidden; transition:max-height .4s ease,padding .4s ease; padding:0 20px; font-family:'Roboto',sans-serif; font-weight:400; font-size:15px; line-height:1.6; }
+    .faq-wrap .acc-body.open { max-height:300px; padding:0 20px 15px; }
+    @media(max-width:480px){ .faq-wrap .acc-body{font-size:12px} }
+    .references { text-align:center; padding:20px; }
+    .references h2 { font-family:'Roboto',sans-serif; font-weight:600; font-size:38px; line-height:48px; }
+    @media(max-width:480px){ .references h2{font-size:26px;line-height:32px} }
+    .references img { width:70%; margin:0 auto; }
+    @media(max-width:480px){ .references img{width:100%} }
+    .comments-wrap { background:#fff; max-width:1140px; margin:0 auto; padding:20px 10px; }
+    .co-header { font-family:Helvetica,Arial,sans-serif; font-weight:600; font-size:14px; border-bottom:1px solid #e9ebee; padding-bottom:16px; margin-bottom:12px; }
+    .fb-comment { display:flex; align-items:flex-start; gap:8px; margin-bottom:14px; }
+    .fb-avatar { width:48px; height:48px; flex-shrink:0; overflow:hidden; }
+    .fb-avatar img { width:100%; height:100%; object-fit:cover; }
+    .fb-user { color:#385898; font-weight:600; font-size:14px; font-family:Helvetica,Arial,sans-serif; text-transform:capitalize; }
+    .fb-text { color:#1c1e21; font-size:14px; font-weight:400; font-family:Helvetica,Arial,sans-serif; line-height:19.12px; margin:4px 0 6px; word-break:break-word; }
+    .fb-meta { display:flex; align-items:center; gap:4px; font-size:12px; font-family:Helvetica,Arial,sans-serif; }
+    .fb-meta .act { color:#4267b2; cursor:pointer; }
+    .fb-meta .act:hover { text-decoration:underline; }
+    .fb-meta .likes { display:flex; align-items:center; gap:3px; color:#1c1e21; }
+    .fb-meta .likes img { width:14px; height:14px; }
+    .fb-meta .time { color:#90949c; }
+    .co-footer { border-top:1px solid #e9ebee; padding-top:8px; display:flex; align-items:center; gap:5px; }
+    .co-footer img { width:14px; height:14px; }
+    .co-footer span { color:#385898; font-weight:600; font-family:Helvetica,Arial,sans-serif; font-size:11px; }
+    .no-comments { text-align:center; font-size:15px; font-weight:500; padding:10px; background:#fff; max-width:1140px; margin:0 auto; }
+    @media(max-width:480px){ .no-comments{font-size:13px} }
+    .site-footer { background:#000; color:#fff; text-align:center; padding:20px 10px; font-size:14px; font-weight:300; }
+    .site-footer p { margin-top:7px; }
+    .site-footer a { color:#fff; }
+    .site-footer a:hover { opacity:.75; }
+    .site-footer .disc { font-size:12px; max-width:800px; margin:10px auto 0; line-height:1.5; font-weight:400; }
+    @media(max-width:480px){ .site-footer{font-size:12px} .site-footer .disc{font-size:11px} }
+    .atomicat-delay { display:none; }
+    @media(max-width:600px){ .item-img{padding-top:12px;padding-bottom:14px} .item-img img{max-width:82%;height:auto;margin:10px auto 14px;display:block} .item-img .supply{margin-bottom:6px;font-size:.85rem} }
+  </style>
+<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script><link as="script" href="https://scripts.converteai.net/7c7bd695-6caf-4018-a18e-698278a6e371/players/6a7bc3d7ecab17bd010239a0/v4/player.js" rel="preload"/><link as="script" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" rel="preload"/><link as="fetch" href="https://cdn.converteai.net/7c7bd695-6caf-4018-a18e-698278a6e371/6a7bc36d1399a6fdc41f6dbd/main.m3u8" rel="preload"/><link href="https://cdn.converteai.net" rel="dns-prefetch"/><link href="https://scripts.converteai.net" rel="dns-prefetch"/><link href="https://images.converteai.net" rel="dns-prefetch"/><link href="https://license.vturb.com" rel="dns-prefetch"/><script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "y0yzfi61ha");
+</script></head>
+<body>
+<!-- 1. BANNER SUPERIOR ROJO -->
+<div class="top-banner">
+<h3>HEALTH NEWS</h3>
+</div>
+<!-- 2. SECCIÓN VSL -->
+<div class="vsl-section">
+<div class="container">
+<div class="vsl-player">
+<vturb-smartplayer id="vid-6a7bc3d7ecab17bd010239a0" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 133.33333333333331% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
+<script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/7c7bd695-6caf-4018-a18e-698278a6e371/players/6a7bc3d7ecab17bd010239a0/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+</div>
+<p class="watchers-text"><span id="watcherCount">559</span> people are watching now.</p>
+</div>
+</div>
+<!-- 3. REFERENCIAS CIENTÍFICAS -->
+<div class="references">
+<h2>Scientific References</h2>
+<img alt="Scientific References" src="assets/FrxGnK2689358.png"/>
+</div>
+<!-- 4. COMENTARIOS -->
+<div class="comments-wrap">
+<div class="co-header">Showing 16 of 592 comments</div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/FpbsYL7882844.webp"/></div><div><div class="fb-user">Carlos Méndez</div><div class="fb-text">Honestly, I didn't believe it at first, but after only two weeks using hydrogen peroxide, I noticed a huge difference. The spots on my skin disappeared and I feel like a new person. My husband keeps telling me how good I look!</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>13</span><span class="dot">·</span><span class="time">3 min</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/IaGIjr8150094.webp"/></div><div><div class="fb-user">María López</div><div class="fb-text">This hydrogen peroxide trick changed my life. I used to be embarrassed to show my nails because of fungus, but now they look perfect again. I highly recommend it!</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>9</span><span class="dot">·</span><span class="time">11 min</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/15374bf.jpeg"/></div><div><div class="fb-user">Roberto Sánchez</div><div class="fb-text">I tried everything on the market, but nothing worked like this hydrogen peroxide method. My skin looks clearer and the infections disappeared. I feel amazing!</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>18</span><span class="dot">·</span><span class="time">13 min</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/iyDkSp8150094.webp"/></div><div><div class="fb-user">Ana García</div><div class="fb-text">It took about 10 days to take effect, but the results are surprising. My wounds healed faster and my skin looks much cleaner. Thank you for sharing this secret!</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>3</span><span class="dot">·</span><span class="time">16 min</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/yNogej8150094.webp"/></div><div><div class="fb-user">Fernando Torres</div><div class="fb-text">I didn't expect it to work so quickly. I used hydrogen peroxide as they explained in the video and within a few days the spots started to fade. This is real.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>7</span><span class="dot">·</span><span class="time">22 min</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/kjSqPR4172226.webp"/></div><div><div class="fb-user">Patricia Rodríguez</div><div class="fb-text">I was skeptical, but it worked when nothing else did. The fungus on my feet disappeared completely. I feel like a new person.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>10</span><span class="dot">·</span><span class="time">1 hr</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/rMmyYF4172226.webp"/></div><div><div class="fb-user">Jorge Hernández</div><div class="fb-text">This gave me my confidence back. My skin improved so much and I no longer have to hide my hands. It is worth every penny.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>4</span><span class="dot">·</span><span class="time">1 hr</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/InCxFy4172226.webp"/></div><div><div class="fb-user">Laura Martínez</div><div class="fb-text">I've been using it for a month and the difference is impressive. The dark spots faded, the fungus disappeared, and my skin feels healthier than ever.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>12</span><span class="dot">·</span><span class="time">1 hr</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/aYvYEx4172226.webp"/></div><div><div class="fb-user">Miguel Ángel Ruiz</div><div class="fb-text">I used to feel insecure about my skin problems. Now I feel clean, confident, and in control again. It is worth every penny.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>6</span><span class="dot">·</span><span class="time">3 hrs</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/qnegib4172226.webp"/></div><div><div class="fb-user">Rosa Díaz</div><div class="fb-text">I'm 55 and I haven't felt this good about my skin since my 30s. The results are visible in both the spots and the texture.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>5</span><span class="dot">·</span><span class="time">3 hrs</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/RJmwhX2149658.jpeg"/></div><div><div class="fb-user">Alejandro Vargas</div><div class="fb-text">I've been using this method for 2 months and I've seen huge changes. My skin is clearer than ever and my family notices it too.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>9</span><span class="dot">·</span><span class="time">5 hrs</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/sPEeua1670390.jpeg"/></div><div><div class="fb-user">Carmen Flores</div><div class="fb-text">Honestly, I didn't think such a simple product could do this. The fungus disappeared within weeks. No side effects, just results.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>6</span><span class="dot">·</span><span class="time">6 hrs</span></div></div></div>
+<div class="fb-comment"><div class="fb-avatar"><img alt="" src="assets/giSlwc2121270.jpeg"/></div><div><div class="fb-user">Eduardo Ramírez</div><div class="fb-text">This changed my life. The infections, spots, and irritation all improved dramatically. I finally feel good about myself again.</div><div class="fb-meta"><span class="act">Like</span><span class="dot">·</span><span class="act">Reply</span><span class="dot">·</span><span class="likes"><img alt="" src="assets/fblike.webp"/>3</span><span class="dot">·</span><span class="time">7 hrs</span></div></div></div>
+<div class="co-footer"><img alt="Facebook" src="assets/fblogo.webp"/><span>Facebook Social Plugin</span></div>
+</div>
+<p class="no-comments">This post is no longer accepting comments!</p>
+<!-- 5. PIE DE PÁGINA -->
+<footer class="site-footer">
+<p>Copyright 2026 - Natural Health ®</p>
+<p>All rights reserved</p>
+<p><a href="terms/index.html">Terms of Use</a> · <a href="privacy/index.html">Privacy</a></p>
+<p class="disc">The information on this website has not been evaluated by the Food and Drug Administration or any other medical authority. We do not intend to diagnose, treat, cure, or prevent any disease. The information is shared for educational purposes only. You should always consult your physician before acting on any content on this website, especially if you are pregnant, breastfeeding, taking medication, or have a medical condition.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('watcherCount').textContent=Math.floor(Math.random()*301)+400;
+    setTimeout(function(){var el=document.querySelector('.atomicat-delay');if(el)el.style.display='block'},100);
+  </script>
+</body>
+</html>
